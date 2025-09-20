@@ -3,14 +3,12 @@ package src.lab1.utils;
 import java.util.Arrays;
 
 public class Printer {
-    public static void printArray(Object arr) {
-        if (arr instanceof short[]) {
-            System.out.println(Arrays.toString((short[]) arr));
-        } else if (arr instanceof float[]) {
-            System.out.printf(Arrays.toString((float[]) arr));
-        } else {
-            throw new IllegalArgumentException("Unsupported type");
-        }
+    public static void printArray(short[] arr) {
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void printArray(float[] arr) {
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void printMatrix(float[][] matrix) {
