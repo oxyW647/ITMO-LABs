@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  compile:
+    desc: Компиляция Java файлов
+    cmds:
+      - javac src/**/*.java -d bin
+
+  run:
+    desc: Запуск основного класса
+    cmds:
+      - java -cp bin src.lab1.Main
+
+  cjar:
+    desc: Упаковка jar архива
+    cmds:
+      - jar cfe lab1.jar src.lab1.Main -C bin .
