@@ -54,22 +54,22 @@ chmod u=r,g=,o= seel8/graveler
 
 # * Part 3 | Copy files and create links
 
-ln -s mismagius1 Copy_25 # ! 1
+ln -s mismagius1 Copy_25 # * 3.1
 
-ln -s ../teddiursa6 mismagius1/mothimteddiursa # ! 2
+ln -s ../teddiursa6 mismagius1/mothimteddiursa # * 3.2
 
-cat seel8/graveler > gabite5_76 # ! 3
+cat seel8/graveler > gabite5_76 # * 3.3
 chmod u+r mismagius1/snivy
 cat mismagius1/snivy >> gabite5_76
 chmod u-r mismagius1/snivy
 
-ln gabite5 seel8/gurdurrgabite # ! 4
+ln gabite5 seel8/gurdurrgabite # * 3.4
 
-cat gabite5 > mismagius1/mothimgabite # ! 5
+cat gabite5 > mismagius1/mothimgabite # * 3.5
 
-cp silcoon4 seel8/rufflet/silcoon4 # ! 6
+cp silcoon4 seel8/rufflet/silcoon4 # * 3.6
 
-chmod u+r seel8 && chmod u+r seel8/dusclops && chmod u+r seel8/rufflet # ! 7
+chmod u+r seel8 && chmod u+r seel8/dusclops && chmod u+r seel8/rufflet # * 3.7
 cp -r seel8 litwick0/leafeon
 chmod u-r seel8 && chmod u-r seel8/dusclops && chmod u-r seel8/rufflet
 
