@@ -96,7 +96,7 @@ echo -e "\033[0;36mPart 4.5:\033[0m"
 cat **/*r 2>/dev/null | sort
 
 # * Part 4.6
-echo -e "\033[0;36mPart 4.5:\033[0m"
+echo -e "\033[0;36mPart 4.6:\033[0m"
 ls -1r seel8/ 2>/dev/null
 
 # * Part 5 | Delete files
