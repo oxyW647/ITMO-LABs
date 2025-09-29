@@ -103,7 +103,7 @@ ls -1r seel8/ 2>/dev/null
 
 echo -e "\033[0;36mPart 5:\033[0m"
 rm silcoon4
-rm litwick0/snivy
+rm -f litwick0/snivy
 rm Copy_*
 rm seel8/gurdurrgabi*
 rm -rf seel8
