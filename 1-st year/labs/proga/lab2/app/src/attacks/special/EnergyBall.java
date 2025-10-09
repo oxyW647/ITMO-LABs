@@ -4,6 +4,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.Type;
+import utils.Probability;
 
 public final class EnergyBall extends SpecialMove {
     public EnergyBall() {
@@ -12,7 +13,7 @@ public final class EnergyBall extends SpecialMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        if (Math.random() < 0.1) {
+        if (Probability.gen(0.1)) {
             pokemon.setMod(Stat.SPECIAL_DEFENSE, -1);
         }
     }

@@ -4,6 +4,7 @@ import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
+import utils.Probability;
 
 public final class Thunder extends SpecialMove {
     public Thunder() {
@@ -12,7 +13,7 @@ public final class Thunder extends SpecialMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        if (Math.random() < 0.3) {
+        if (Probability.gen(0.3)) {
             Effect.freeze(pokemon);
         }
     }

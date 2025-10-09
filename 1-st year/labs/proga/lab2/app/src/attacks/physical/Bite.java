@@ -4,6 +4,7 @@ import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
+import utils.Probability;
 
 public final class Bite extends PhysicalMove {
     public Bite() {
@@ -12,7 +13,7 @@ public final class Bite extends PhysicalMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        if (Math.random() > 0.7) {
+        if (Probability.gen(0.3)) {
             Effect.flinch(pokemon);
         }
     }
